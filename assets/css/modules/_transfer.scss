@@ -1,0 +1,28 @@
+.transfer-section {
+	padding: 4rem 0;
+
+	.tab-pages {
+		.tab-page.active {
+			color: $warning;
+		}
+	}
+
+	.page-content {
+		.transfer-tab-nav {
+			.slick-track {
+				li {
+					color: $white;
+					margin-right: 10px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					&.slick-current {
+						border: 3px solid $primary;
+					}
+				}
+			}
+		}
+	}
+}

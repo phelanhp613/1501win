@@ -1,0 +1,76 @@
+.tab-for {
+	.item {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		height: 100%;
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 47px;
+			right: -59px;
+			width: 140px;
+			height: 100%;
+			--tw-bg-opacity: 1;
+			background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+			opacity: .25;
+			transform: rotate(40deg);
+		}
+
+		img {
+			width: 100%;
+			position: relative;
+		}
+
+		span.title {
+			position: absolute;
+			top: 65%;
+			transform: translate(0, -65%);
+			left: 10%;
+			font-size: 0.6rem;
+			max-width: 3.5rem;
+			line-height: 0.68rem;
+			text-align: center;
+		}
+
+		small {
+			position: absolute;
+			background-color: $primary;
+			font-size: 0.7rem;
+			line-height: 1;
+			bottom: 0;
+			right: 0;
+			border-radius: 10px 0 0 0;
+			padding: 0.1rem 0.25rem;
+		}
+
+		.badge {
+			position: absolute;
+			content: "";
+			display: block;
+			top: 0;
+			right: 0;
+			width: 1.875rem;
+			height: 1.875rem;
+			z-index: 3;
+
+			&.gift {
+				background: center / contain no-repeat url("../images/box-icon.png");
+			}
+
+			&.hot {
+				background: center / contain no-repeat url("../images/hot-icon.png");
+				right: initial;
+				left: 0;
+			}
+
+		}
+	}
+}
+
+.tab-nav {
+	i {
+		font-size: 1.5rem;
+	}
+}

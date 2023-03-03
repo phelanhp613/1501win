@@ -1,0 +1,14 @@
+.account-section {
+	padding: 5rem 0;
+	.balance {
+		height: 6rem;
+	}
+
+	.function-list {
+		i {
+			color: $primary;
+			font-size: 36px;
+			display: block;
+		}
+	}
+}

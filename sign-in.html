@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>1501WIN.COM</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/slick/css/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/slick/css/slick-theme.min.css"/>
+	<link rel="stylesheet" href="assets/vendor/bootstrap/styling/bootstrap_theme.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-dark">
+<!-- Header -->
+<header class="header">
+	<!--Top Header-->
+	<div class="header-top bg-dark w-100 py-4">
+		<div class="logo logo-register text-center">
+			<a href="index.html" class="d-block">
+				<img src="https://1501win.com/images/logo/logo-1501win2.png" alt="">
+			</a>
+		</div>
+	</div>
+</header>
+<!-- End Header -->
+<!--Main Page-->
+<div class="main pt-0">
+	<div class="auth-section px-3">
+		<ul class="nav nav-tabs w-100" id="tab" role="tablist">
+			<li aria-hidden="true" class="nav-item w-50" role="presentation">
+				<button class="nav-link w-100 text-uppercase fw-bold active" id="home-tab" data-bs-toggle="tab" data-bs-target="#sign-in-tab" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+					<i aria-hidden="true" class="fas fa-caret-up"></i>
+					<span>Đăng nhập</span>
+				</button>
+			</li>
+			<li aria-hidden="true" class="nav-item w-50" role="presentation">
+				<button class="nav-link text-uppercase fw-bold w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sign-up-tab" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+					<i aria-hidden="true" class="fas fa-caret-up"></i>
+					<span>Đăng ký</span>
+				</button>
+			</li>
+		</ul>
+		<div class="tab-content" id="tab-content">
+			<div class="tab-pane fade show active" id="sign-in-tab" role="tabpanel" tabindex="0">
+				<form action="withdraw.html" method="post" class="p-3 bg-gray">
+					<div class="input-group mb-3">
+						<span class="input-group-text text-primary bg-white border-0"><i aria-hidden="true" class="far fa-user"></i></span>
+						<input type="text" class="form-control border-0" placeholder="Tài khoản">
+					</div>
+					<div class="input-group mb-3">
+						<span class="input-group-text text-primary bg-white border-0"><i aria-hidden="true" class="fa-solid fa-lock"></i></span>
+						<input type="text" class="form-control border-0" placeholder="Mật khẩu">
+						<span class="input-group-text text-primary bg-white border-0">
+                  <a href="#" class="text-primary fs-8">Quên?</a>
+                </span>
+					</div>
+					<div class="input-group mb-3 d-none">
+						<span class="input-group-text text-primary bg-white border-0"><i aria-hidden="true" class="fas fa-shield-alt"></i></span>
+						<input type="text" class="form-control border-0" placeholder="Mã xác minh">
+					</div>
+					<button type="submit" class="btn btn-primary w-100 text-white fs-5">Đăng Nhập</button>
+				</form>
+			</div>
+			<div class="tab-pane fade" id="sign-up-tab" role="tabpanel" tabindex="0">
+				<form action="#" method="post" class="p-3 bg-gray">
+					<div class="form-group mb-3">
+						<label class="mb-1">
+							<i aria-hidden="true" class="fas fa-star text-primary"></i>
+							<span>Tên tài khoản</span>
+						</label>
+						<input type="text" class="form-control border-0 mb-1">
+						<p class="fs-8">Từ 2-15 kí tự, phải bắt đầu bằng chữ cái, có thể gồm cả chữ cái, số và gạch dưới.</p>
+					</div>
+					<div class="form-group mb-3">
+						<label class="mb-1">
+							<i aria-hidden="true" class="fas fa-star text-primary"></i>
+							<span>Mật khẩu</span>
+						</label>
+						<input type="password" class="form-control border-0 mb-1">
+						<p class="fs-8">Hơn 6 ký tự phải bao gồm chữ cái và số</p>
+					</div>
+					<div class="form-group mb-3">
+						<label class="mb-1">
+							<i aria-hidden="true" class="fas fa-star text-primary"></i>
+							<span>Xác nhận mật khẩu</span>
+						</label>
+						<input type="password" class="form-control border-0 mb-1">
+						<p class="fs-8">Vui lòng xác nhận mật khẩu</p>
+					</div>
+					<div class="form-group mb-3">
+						<label class="mb-1">
+							<i aria-hidden="true" class="fas fa-star text-primary"></i>
+							<span>Họ và tên</span>
+						</label>
+						<input type="password" class="form-control border-0 mb-1">
+						<p class="fs-8">Viết họ tên đầy đủ, chữ in hoa không dấu</p>
+					</div>
+					<div class="form-group mb-3 d-none">
+						<label class="mb-1">
+							<i aria-hidden="true" class="fas fa-star text-primary"></i>
+							<span>Mã xác minh</span>
+						</label>
+						<input type="password" class="form-control border-0 mb-1">
+						<p class="fs-8">Xin vui lòng nhập mã xác minh</p>
+					</div>
+					<label class="fs-7">
+						<input type="checkbox" name="agree">
+						<span>Tôi đã hiểu</span>
+						<span class="text-primary text-decoration-underline">Thỏa thuận đăng ký người dùng</span>
+					</label>
+					<button type="submit" class="btn btn-primary w-100 text-white fs-5">Đăng Nhập</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Main Page -->
+<!--Footer-->
+<footer class="footer p-3">
+	<div class="d-flex justify-content-center gap-1 mb-4">
+		<a href="#" class="btn btn-outline-primary">
+			<i aria-hidden="true" class="fa-solid fa-gamepad"></i>
+			<span>Chơi miễn phí</span>
+		</a>
+		<a href="#" class="btn btn-outline-primary">
+			<i aria-hidden="true" class="fa-solid fa-headset"></i>
+			<span>Chăm sóc 24/7</span>
+		</a>
+	</div>
+	<p class="copyright text-center text-primary fs-7"> Copyright © <span>1501WIN</span> Reserved </p>
+</footer>
+<!--End Footer-->
+<script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/vendor/jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="/assets/vendor/slick/js/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

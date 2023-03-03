@@ -1,0 +1,31 @@
+/**
+*
+* Bootstrap Define Modules
+*
+*/
+@import "utilities";
+@import "../scss/bootstrap";
+@import "../scss/helpers";
+
+// Utilities
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "font-size"), "values"),
+          (
+            7: 14px,
+            8: 12px,
+            9: 10px,
+            10: 9px,
+          ),
+        ),
+      ),
+    ),
+  )
+);
+@import "../scss/utilities/api";
