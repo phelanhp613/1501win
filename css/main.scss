@@ -96,8 +96,12 @@ body {
 					max-height: 5rem;
 					min-width: 4rem;
 
+					@media (max-width: 380px) {
+						margin-right: 0;
+					}
+
 					&:last-child {
-						margin-right: 0px;
+						margin-right: 0;
 					}
 
 					&.active {
