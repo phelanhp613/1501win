@@ -1,10 +1,9 @@
-@import "../vendor/bootstrap/styling/fonts";
-@import "../vendor/bootstrap/styling/variables";
+@import "../vendor/bootstrap/styling/helper";
 @import "modules";
 
 body {
 	margin: 0;
-	font-size: 16px;
+	font-size: 1.1rem;
 	font-family: $font-primary;
 	color: white;
 	overflow-x: hidden;
@@ -33,11 +32,11 @@ body {
 
 	.logo {
 		&.logo-register {
-			max-height: 50px;
+			max-height: calPxToRem(50);
 		}
 
 		img {
-			max-height: 40px;
+			max-height: calPxToRem(40);
 			object-fit: contain;
 		}
 	}
@@ -57,7 +56,7 @@ body {
 		max-width: 50%;
 
 		.sidebar-header {
-			height: 150px;
+			height: calPxToRem(150);
 			width: 100%;
 		}
 
@@ -202,6 +201,17 @@ body {
 	}
 }
 
+.tab-pages {
+	.tab-page {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.active {
+			color: $warning;
+		}
+	}
+}
+
 .user-info {
 	.name {
 		overflow-wrap: break-word;
@@ -220,7 +230,7 @@ body {
 	position: relative;
 	top: 4px;
 	max-width: 100%;
-	height: 200px;
+	height: calPxToRem(200);
 	overflow-x: hidden;
 
 	.track {

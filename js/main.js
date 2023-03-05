@@ -8,7 +8,7 @@
 				autoplaySpeed: 2000,
 			});
 		},
-		SlickSyncing: function (tabFor, tabNav, slidesToShow, slidesToScroll) {
+		SlickSyncing: function (tabFor, tabNav, slidesToShow, slidesToScroll, breakpoint380slidesToShow, breakpoint380slidesToScroll) {
 			$(tabFor).slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -22,8 +22,8 @@
 					{
 						breakpoint: 380,
 						settings: {
-							slidesToShow: 4,
-							slidesToScroll: 4
+							slidesToShow: breakpoint380slidesToShow,
+							slidesToScroll: breakpoint380slidesToScroll
 						}
 					}
 				]
@@ -53,8 +53,8 @@
 
 	$(document).ready(function () {
 		fn.SlickSlider($('.home-banner-slider'));
-		fn.SlickSyncing('.tab-for', '.tab-nav', 5, 5);
-		fn.SlickSyncing('.transfer-tab-for', '.transfer-tab-nav', 3, 3);
+		fn.SlickSyncing('.tab-for', '.tab-nav', 5, 5, 4, 4);
+		fn.SlickSyncing('.transfer-tab-for', '.transfer-tab-nav', 3, 3, 3, 3);
 		fn.copyToClipboard('.btn-copy');
 	});
 })(jQuery);
