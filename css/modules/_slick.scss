@@ -9,7 +9,7 @@
 			content: "";
 			position: absolute;
 			bottom: calPxToRem(47);
-			right: calPxToRem(59);
+			right: - calPxToRem(59);
 			width: calPxToRem(140);
 			height: 100%;
 			--tw-bg-opacity: 1;

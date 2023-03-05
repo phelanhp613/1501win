@@ -13,6 +13,7 @@
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				infinite: false,
+				adaptiveHeight: true,
 			});
 			$(tabNav).slick({
 				slidesToShow: slidesToShow,
